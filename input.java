@@ -11,10 +11,10 @@ class Main {
 
     public static int sumOfDigits(int n) {
         int sum = 0;
-        while (n > 0) {
+        do {
             sum += n % 10;
             n /= 10;
-        }
+        } while (n > 0);
         return sum;
     }
 }
